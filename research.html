@@ -38,9 +38,9 @@ Indian Institute of Technology (IIT), Kharagpur, India<a></div>
                 <span class="sr-only">(current)</span>
               </a>
         </li>
-        <li class="">
+        <!-- <li class="">
           <a class="nav-link" href="https://epionecovid.herokuapp.com/"  target="_blank_">Covid19 Forecasting</a>
-        </li>
+        </li>-->
         <li class="">
           <a class="nav-link" href="research.html">Research</a>
         </li>
@@ -58,18 +58,22 @@ Indian Institute of Technology (IIT), Kharagpur, India<a></div>
   Our group is investigating several problems related to epidemics. We summarize some of our main findings below.
   <br>
   <br>
-  <p style="color:red">Caveat: Our investigation and results are based on mathematical models of epidemics/spreading processes on networks. Mathematical abstractions help us capture important features of complex real-world phenomena, analyze them in a tractable manner and provide high-level insights on their behavior. Nevertheless, these models and abstractions are not perfect and do not capture all the the complexity and heterogeneity present in real-world epidemics. Therefore, while interpreting our results for infectious diseases (such as COVID-19), the above caveat should be kept in mind.</p>
+  <p style="color:red"><b>Disclaimer:</b> Our investigation and results are based on mathematical models of epidemics/spreading processes on networks. Mathematical abstractions help us capture important features of complex real-world phenomena, analyze them in a tractable manner and provide high-level insights on their behavior. Nevertheless, these models and abstractions are not perfect and do not capture all the the complexity and heterogeneity present in real-world epidemics. Therefore, while interpreting our results for infectious diseases (such as COVID-19), the above caveat should be kept in mind.</p>
   <h4 class="bottomspace"><u>Optimal Non-Pharmaceutical Intervention via Feedback from Testing Data</u></h4>
-  In the absence of vaccines and medicines, non-pharmaceutical interventions such as imposing lock-down measures and augmenting healthcare resources are relied on to reduce the growth and spread of epidemics. We have developed a closed-loop approach that combines inference from testing data, learning the epidemic parameters and optimally allocating NPIs to balance the trade-off between epidemic growth rate and (economic) cost of NPIs for the class of <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology">SIR epidemics</a> on networks.
+  In the absence of vaccines and medicines, non-pharmaceutical interventions (NPIs) such as imposing lock-down measures and augmenting healthcare resources are relied on to reduce the growth and spread of epidemics. We have developed a closed-loop approach that combines inference from testing data, learning the epidemic parameters and optimally allocating NPIs to balance the trade-off between epidemic growth rate and (economic) cost of NPIs for the class of <a href="https://en.wikipedia.org/wiki/Compartmental_models_in_epidemiology">SIR epidemics</a> on networks.
   <br>
-  <b>Main findings:</b>
+  <b>Main contributions:</b>
   <ul>             
     <li class="bottomspace">We have characterized the equiilbria in discrete-time SIR epidemic dynamics on networks and generalized the notion of reproduction number to the networked epidemic setting.</li>
     <li class="bottomspace">We have proposed Bayesian inference algorithms that infer the epidemic state from testing data suitably compensating for factors such as mostly high risk symptomatic individuals undergo testing in practice and individuals develop symptoms after an incubation period.</li>
-    <li class="bottomspace">We have formulated tractable optimization problems that use inferred states as feedback for optimal allocation of NPIs subject to constaints on epidemic growth-rate and/or NPI cost. Our mathematical framework captures the emergence of a second wave of infections if NPIs are prematurely withdrawn.</li>
+    <li class="bottomspace">We have formulated tractable optimization problems that use inferred states as feedback for optimal allocation of NPIs subject to constaints on epidemic growth-rate and/or NPI cost.</li>
     <li class="bottomspace">The importance of early testing, accurate inference and regularly adapting NPIs by using feedback from testing data are illustrated.</li>
-    <li class="bottomspace">Policy implication: To control the spread of SIR-type epidemics, NPIs (such as lock-down measures) should be imposed to a varying degree in different nodes of the network and these should be regularly updated based on feedback from testing data after compensating for nonuniform testing policies.
-    </li>
+  </ul>  
+  <b>Insights and Policy implications:</b>
+  <ul> 
+    <li class="bottomspace"> To control the spread of SIR-type epidemics, NPIs (such as lock-down measures) should be imposed to a varying degree in different nodes of the network.</li>
+    <li class="bottomspace">If NPIs are imposed to limit the growth rate of the epidemic, then a large fraction of the population remains vulnerable. Our mathematical framework captures the emergence of a second wave of infections if NPIs are prematurely withdrawn.</li>
+    <li class="bottomspace"> NPIs should be regularly updated based on feedback from testing data after compensating for nonuniform testing policies.</li> 
   </ul>
   <b>Relevance for COVID-19:</b>
   <ul>             
@@ -102,8 +106,7 @@ Indian Institute of Technology (IIT), Kharagpur, India<a></div>
 </div>
 <div class="bg-secondary w-50 mx-auto p-1 my-4"></div>  
 </div>
-  </div>
-<div style="font-size:20px;text-align: center;margin-bottom: 10px" > &#169; EpioNe group </div>
+
 
 </body>
 </html>
